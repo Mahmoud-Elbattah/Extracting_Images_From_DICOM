@@ -58,7 +58,7 @@ for fileName in os.listdir(inputDir):
                     plt.imsave(arr=dataset.pixel_array, fname=outputDir+"\\Negative\\" + str(imgID)+"_"+str(imgLaterality)+".jpg", cmap=plt.cm.gray)
                     imgSavedCount = imgSavedCount + 1
                 else:
-                    print("Wrong Label!")
+                    print("Unexpected Label!")
                     logFile.write(clientID + ":Label=" + str(imgLabel) + "\n")
             else:
                 imgSkippedCount = imgSkippedCount + 1
